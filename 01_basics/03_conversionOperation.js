@@ -1,10 +1,11 @@
-let score = "hitesh"
+let score = "adnan"
+let newsscore = 45;
 
-//console.log(typeof score);
-//console.log(typeof(score));
+// console.log(typeof score);
+// console.log(typeof(score));
 
 let valueInNumber = Number(score)
-//console.log(typeof valueInNumber);
+// console.log(typeof valueInNumber);
 //console.log(valueInNumber);
 
 
@@ -41,7 +42,7 @@ let negValue = -value
 // console.log(2%3);
 
 let str1 = "hello"
-let str2 = " hitesh"
+let str2 = "adnan"
 
 let str3 = str1 + str2
 // console.log(str3);
@@ -51,18 +52,22 @@ let str3 = str1 + str2
 // console.log("1" + 2 + 2);
 // console.log(1 + 2 + "2");
 
-// console.log( (3 + 4) * 5 % 3);
+// console.log( (3 + 4) * 5 % 3);   // not readable
 
-// console.log(+true);
-// console.log(+"");
+// console.log(+true);       
+// console.log(+"");      // a empty string give - value in boolean
 
 let num1, num2, num3
 
 num1 = num2 = num3 = 2 + 2
+// console.log(num1);
 
-let gameCounter = 100
-++gameCounter;
-console.log(gameCounter);
+let precount = 0;
+console.log(++precount); // Outputs: 1
+let postcount = 0;
+let postcount1 = postcount;
+console.log(postcount++); // Outputs: 0
+console.log(postcount++); // Outputs: 0
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
