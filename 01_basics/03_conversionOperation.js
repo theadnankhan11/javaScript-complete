@@ -1,12 +1,13 @@
 let score = "adnan"
-let newsscore = 45;
+let newscore = "45";
 
 // console.log(typeof score);
-// console.log(typeof(score));
+// console.log(typeof(newsscore));
 
-let valueInNumber = Number(score)
+
+let valueInNumber = Number(newscore)
 // console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+// console.log(valueInNumber);
 
 
 // "33" => 33
@@ -41,7 +42,7 @@ let negValue = -value
 // console.log(2/3);
 // console.log(2%3);
 
-let str1 = "hello"
+let str1 = "hello "
 let str2 = "adnan"
 
 let str3 = str1 + str2
@@ -54,8 +55,8 @@ let str3 = str1 + str2
 
 // console.log( (3 + 4) * 5 % 3);   // not readable
 
-// console.log(+true);       
-// console.log(+"");      // a empty string give - value in boolean
+console.log(+true);       
+console.log(+"");      // false  a empty string give - value in boolean
 
 let num1, num2, num3
 
@@ -65,6 +66,8 @@ num1 = num2 = num3 = 2 + 2
 let precount = 0;
 console.log(++precount); // Outputs: 1
 let postcount = 0;
+console.log(postcount++); // Outputs: 0
+
 let postcount1 = postcount;
 console.log(postcount++); // Outputs: 0
 console.log(postcount++); // Outputs: 0
