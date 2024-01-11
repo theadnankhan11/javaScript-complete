@@ -6,9 +6,9 @@ let  myDate1 = new Date()
 // console.log(myDate1.toISOString());
 // console.log(myDate1.toJSON());
 // console.log(myDate1.toLocaleDateString());
- // console.log(myDate1.toLocaleString());
+//  console.log(myDate1.toLocaleString());
 // console.log(myDate1.toTimeString());
-// console.log(myDat1e.toUTCString());
+// console.log(myDate1.toUTCString());
 
 // Dates
 
@@ -18,10 +18,10 @@ let myDate = new Date()
 // console.log(myDate.toLocaleString());
 // console.log(typeof myDate);
 
-// let myCreatedDate = new Date(2023, 0, 23)
-// let myCreatedDate = new Date(2023, 0, 23, 5, 3)
-// let myCreatedDate = new Date("2023-01-14")
-let myCreatedDate = new Date("01-14-2023")
+// let myCreatedDate = new Date(2023, 0, 11)
+// let myCreatedDate1 = new Date(2023, 0, 23, 5, 3)
+// let myCreatedDate2 = new Date("2023-01-14")
+// let myCreatedDate3 = new Date("01-14-2023")
 // console.log(myCreatedDate.toLocaleString());
 
 let myTimeStamp = Date.now()
@@ -31,13 +31,12 @@ let myTimeStamp = Date.now()
 // console.log(Math.floor(Date.now()/1000));
 
 let newDate = new Date()
-console.log(newDate);
-console.log(newDate.getMonth() + 1);
-console.log(newDate.getDay());
+// console.log(newDate);
+// console.log(newDate.getMonth() + 1);
+// console.log(newDate.getDay());
 
 // `${newDate.getDay()} and the time `
-
-newDate.toLocaleString('default', {
-    weekday: "long",
+// newDate.toLocaleString('default', {
+//     weekday: "long",
     
-})
+// })

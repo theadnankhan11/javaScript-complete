@@ -4,8 +4,9 @@ const tinderUser = {}
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
+tinderUser.age = 10
 
-// console.log(tinderUser);
+console.log(tinderUser);
 
 const regularUser = {
     email: "some@gmail.com",

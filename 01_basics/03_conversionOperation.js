@@ -14,7 +14,7 @@ let valueInNumber = Number(newscore)
 // "33abc" => NaN
 //  true => 1; false => 0
 
-let isLoggedIn = "hitesh"
+let isLoggedIn = "adnan"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
 //  console.log(booleanIsLoggedIn);
@@ -55,8 +55,8 @@ let str3 = str1 + str2
 
 // console.log( (3 + 4) * 5 % 3);   // not readable
 
-console.log(+true);       
-console.log(+"");      // false  a empty string give - value in boolean
+// console.log(+true);       
+// console.log(+"");      // false  a empty string give - value in boolean
 
 let num1, num2, num3
 
