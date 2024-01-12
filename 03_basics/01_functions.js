@@ -1,4 +1,4 @@
-// sayMyName  <- reference ||() <-- execution
+// sayMyName  <- reference ||     () <-- execution
 
 function sayMyName(){
     console.log("A");

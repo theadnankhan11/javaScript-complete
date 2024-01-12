@@ -1,5 +1,5 @@
 // Immediately Invoked Function Expressions (IIFE)
-// Ans ) to call function immediately andTo avoid pollution on global scope and
+// Ans ) to call function immediately and To avoid pollution on global scope and
 
 // 1)
 (function chai(){
@@ -16,5 +16,5 @@
 // 2)
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
-} )('hitesh')
+} )('hitesh');
 
