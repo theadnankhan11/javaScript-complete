@@ -6,7 +6,7 @@ const product = {
 
 }
 
-console.table([product]);
+// console.table([product]);
 
 const profile = {
         post : 195,
@@ -19,4 +19,21 @@ const profile = {
 
 }
 
-console.table(profile);
+// console.table(profile);
+
+
+function SetUsername(username){
+        //complex DB calls
+        this.username = username
+        console.log("called");
+    }
+    
+    function createUser(username, email, password){
+        SetUsername.call(this, username)
+       
+        this.email = email
+        this.password = password
+    }
+    
+    const chai = new createUser("chai", "chai@fb.com", "123")
+    console.log(chai);

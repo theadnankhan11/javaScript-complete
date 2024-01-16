@@ -1,4 +1,5 @@
 // ES6
+// Class constructor and static
 
 class User {
     constructor(username, email, password){
