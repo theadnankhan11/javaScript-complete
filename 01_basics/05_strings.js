@@ -31,6 +31,6 @@ const url = "https://adnan%20com/adnan%20khan"
 
 console.log(url.replace('%20', '-'))
 
-console.log(url.includes('sundar'))    //false true value
+console.log(url.includes('sundar'))    //if present  true value  or not give false
 
 console.log(gameName.split(' '));

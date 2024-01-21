@@ -1,39 +1,89 @@
-const product = {
-        name: "parkar pen (black)",
-        star: 5,
-        dealOfTheDay: true,
-        price: 39
+// sayMyName  <- reference ||     () <-- execution
 
+function sayMyName(){
+    console.log("A");
+    console.log("D");
+    console.log("N");
+    console.log("A");
+    console.log("N");
+}
+sayMyName()
+
+
+
+// function addTwoNumbers(number1 , number2){
+//     console.log(number1 + number2)
+// }
+
+function addTwoNumbers(number1, number2){
+
+     let result = number1 + number2
+     return result
+    //return number1 + number2
 }
 
-// console.table([product]);
+// const result = addTwoNumbers(3, 5)
+// console.log("Result: ", result);
 
-const profile = {
-        post : 195,
-        followers :"569k" ,
-        following: 4,
-        name : "Sharradha khapra",
-        link : "@shardhakapra",
-        Work :" Enterperner",
-        bio : "Apna college | Ex-microsoft , DRDO"
 
+function loginUserMessage(username = "sam"){
+    if(!username){
+        console.log("PLease enter a username");
+        return
+    }
+    return `${username} just logged in`
 }
 
-// console.table(profile);
+// console.log(loginUserMessage("adnan"))
+// console.log(loginUserMessage(""))
 
 
-function SetUsername(username){
-        //complex DB calls
-        this.username = username
-        console.log("called");
+
+// ++++++++++++++++++++++++function +++++++++++++++++++++++++++++
+function counter() {
+    // Infinite loop
+    for (let count = 1; ; count++) {
+        console.log(`${count}A`);
+        // Until 5
+        if (count === 5) {
+            return;
+        }
+        console.log(`${count}B`);
+        // Until 4
     }
-    
-    function createUser(username, email, password){
-        SetUsername.call(this, username)
-       
-        this.email = email
-        this.password = password
-    }
-    
-    const chai = new createUser("chai", "chai@fb.com", "123")
-    console.log(chai);
+    console.log(`${count}C`); // Never appears
+}
+// counter(); // Logs: 1A, 1B, 2A, 2B, 3A, 3B, 4A, 4B, 5A
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+//  ... <-restOperator
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000))
+
+const user = {
+    username: "hitesh",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));

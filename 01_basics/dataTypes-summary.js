@@ -10,9 +10,9 @@ const outsideTemp = null; // null empty   typeOf : object
 let userEmail;
 
 const id = Symbol("123"); //symbol  give uniqe id
-const anotherId = Symbol("123"); //symbol  give uniqe id
+const anotherId = Symbol("123"); //this is another symbol  give uniqe id
 
-// console.log(id === anotherId); // false
+// console.log(id === anotherId); // false because thay are not same
 // console.log(typeof anotherId);
 
 // const bigNumber = 3456543576654356754n // for long numbers or crptocurrancy and scitific calculation
