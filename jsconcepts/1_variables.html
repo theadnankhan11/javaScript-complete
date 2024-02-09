@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let ,var , const</title>
+</head>
+<body>
+    <script>
+        // ES5
+        // variables declared with  "var" are function scoped.
+        // console.log(title)
+        var title = "ES5"   
+
+
+        var firstName = "Adnan"
+            // var  is function scope only
+        // function getName() {
+        //     var firstName = "peter"
+        //     console.log("inner function " + firstName);
+        // }
+        // getName()
+        // console.log("outter function " + firstName);
+
+        if(true) {
+            let firstName = "peter"
+            // console.log("inner function " + firstName);
+        }
+        // console.log("outter function " + firstName);
+        //undefined because of hoisting  var  automaticaliy move to the top of script
+
+        // "let" and "const" are block scoped 
+        // console.log(city);
+        let  city  = "mumbai"  //show an error  because you must initialized  variables  before declared
+
+        var i = 100;
+
+        for (let i = 0; i <=10; i++) {
+            // console.log( "INNER " + i)
+            
+        }
+        // console.log( "INNER " + i)
+        
+        const MAX_VALUE = 100;
+        // MAX_VALUE = 200 //error;
+        // console.log(MAX_VALUE)
+
+        let greet = "Hello";
+        {
+            let greet = "good morning";
+            console.log("Greet INSIDE console", greet);
+        }
+        console.log("Greet OUTSIDE console", greet);
+    </script>
+</body>
+</html>
