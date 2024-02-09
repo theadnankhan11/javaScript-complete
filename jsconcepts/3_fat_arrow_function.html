@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow function</title>
+  </head>
+  <body>
+    <script>
+      //Fat arrow function
+      // An arrow functin expression is a compact alternative to a traditional function  expression
+      //=>(){}
+      // but it is limited con't used in all situations
+      // ES5
+      function add(x, y) {
+        return x + y;
+      }
+      // console.log(add(2,4));
+
+      //ES6
+      //Arrow function
+      // const sum =  (x,y)=> x+y ;
+
+      //Arrow function with no arguments
+      // const sum = ()=> 2+2 ;
+
+      //Arrow function with one arguments
+      // const sum = (a)=> a+2 ;
+
+      // const sum = (a,y)=> {
+      //   return a+y
+      // } ;
+      // console.log(sum(10, 2));
+
+      //  Object in arrow function
+      // const  getUser = () => ({
+      //             name: "adnan",
+      //              city: "mumbai"
+      //             })
+
+      //         console.log(getUser());
+
+      //this
+        //ES5
+      // function addToCart() {
+      //   this.productNmae = "laptop";
+
+      //   this.getProduct = function () {
+      //     console.log(this);
+      //     const that = this;
+      //     setTimeout(function () {
+      //       console.log(that);
+      //       console.log(that.productNmae);
+      //     }, 1000);
+      //   };
+      // }
+      // let obj = new addToCart();
+      // obj.getProduct();
+
+      // ES6
+      
+      // function addToCart() {
+      //   this.productNmae = "laptop";
+      //   this.getProduct = function () {
+      //     setTimeout( ()=> {
+      //       console.log(this.productNmae);
+      //     }, 1000);
+      //   };
+      // }
+      // let obj = new addToCart();
+      // obj.getProduct();
+
+
+      //arrow function is that argument binding in not there but regular function have argument property
+
+      // function first(){
+      //   console.log(arguments);
+      // }
+      // first(19,20)
+
+        // arguments propperty will not work with  arrow function 
+      // const abc  = () =>{
+      //   console.log(arguments);
+      // }
+      // abc(19,20)
+
+
+
+      const names = ["sam","Daniel","peter"]
+      const result = names.map(name => name.toUpperCase())
+      console.log(result);
+
+      // use regular function
+      const  User = {
+        name:"adnan",
+        getUser : function(){
+          console.log(this);
+          return `Username is ${this.name}`
+        }
+      }
+      console.log(User.getUser());
+
+
+      // give error 
+      const  User1 = {
+        name:"adnan",
+        getUser : ()=>{
+          console.log(this);
+          return `Username is ${this.name}`
+        }
+      }
+      console.log(User1.getUser());
+      </script>
+  </body>
+
+</html>
