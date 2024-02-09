@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template_literals</title>
+  </head>
+  <body>
+    <script>
+      // Temlate Literals (Template Strings)
+      // Template Literals allows you   to handle complex string in more convient way.
+      //Strings can be define in three ways now
+      //1. Using Double Quotes("")
+      //2. Using Single Quotes(' ')
+      //1. Using back Tick (`Temlate Literals`)(` `)
+
+      let productName = "Samsung S23";
+      let quantity = 2;
+      let status = "deliverd";
+
+      let productStaus = "Status of the product is";
+      productStaus += status === "deliverd" ? "green" : " red";
+
+      let Description =
+        "I have ordered" + quantity + productName + "status" + productStaus;
+      console.log(Description);
+
+      let productStausWithTemp = `status of the product is ${
+        status === "delivered" ? "green" : "red"
+      }`;
+
+      let Description2 =
+        "I have ordered" + quantity + productName + "new Phone's";
+      console.log(Description2);
+
+      function dateDelivery() {
+        return "12-02-2023";
+      }
+
+      let DescriptionTemplate_literals = `I have ordered  ${quantity} ${productName}"new Phone's estimated delivery date is ${dateDelivery()} also you can add calculation
+       ${4 + 4} and   ${productStausWithTemp}`;
+      console.log(DescriptionTemplate_literals);
+    </script>
+  </body>
+</html>
