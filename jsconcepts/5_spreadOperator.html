@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+
+</head>
+<body>
+    //The syntex is three dots(...)follow by the array(or iterable*)
+    //It expands the array into individual elements. So it can be used to expand the array in a places where zero or more elements are expected
+
+
+    <script>
+        // what is spread operator
+        const users = ["user1", "user2"];
+        console.log(users);
+        console.log(...users);
+
+        //spread operator with arrays
+        //ES 5  use concat  for two element
+        console.log("...spread with Array...");
+        const team1 =  ["user1", "user2"];
+        const team2 =  ["user3"];
+        const newTeam = team1.concat(team2);
+
+        const myTeam = [...team1,...team2]
+        console.log(myTeam);
+
+    </script>
+</body>
+</html>
