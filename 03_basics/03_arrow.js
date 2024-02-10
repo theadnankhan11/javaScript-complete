@@ -1,18 +1,18 @@
-const user = {
-    username: "hitesh",
-    price: 999,
+// const user = {
+//     username: "hitesh",
+//     price: 999,
 
-    welcomeMessage: function () {
-        console.log(`${this.username} , welcome to website`);
-        console.log(this);
-    },
-};
+//     welcomeMessage: function () {
+//         console.log(`${this.username} , welcome to website`);
+//         console.log(this);
+//     },
+// };
 
-// user.welcomeMessage()
-// user.username = "sam"
-// user.welcomeMessage()
+// // user.welcomeMessage()
+// // user.username = "sam"
+// // user.welcomeMessage()
 
-// console.log(this);
+// // console.log(this);
 
 // function chai(){
 //     let username = "hitesh"
@@ -37,6 +37,7 @@ const chai = () => {
 //     return num1 + num2
 // }
 
+// implicit return 
 // const addTwo = (num1, num2) =>  num1 + num2
 
 // const addTwo = (num1, num2) => ( num1 + num2 )
