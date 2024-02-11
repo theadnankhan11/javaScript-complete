@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Function statement / Function Declaration : the function is normally defined and can be used later on
+      // Function expression : the function is first created and assigned to a variable so that it can be called by its variable name and unless it is defined, it cannot be executed otherwise it throws out "Uncaught TypeError"
+
+      // Anonymous function : function where there is no need to define name for the function, it just can be assigned to variable
+
+      // Named function : Normal function with its name assigned to a variable !!In this case you cannot call function by its name in outer scope!! (Scope Chain)
+
+      // first class Functions / first class citizens :
+      // 1) used as values
+      // 2) can be passed as argument
+      // 3) can be executed inside a closured function
+      // 4) can be taken as return
+      // function  inside another funciton as an argument is first class function
+
+      a();
+      // b()  //difference
+      //function Statement aka function declaration
+      function a() {
+        console.log("a clalled");
+      }
+      //function Expression
+      var b = function () {
+        console.log("b called");
+      };
+      //Anonymous function || as use a value
+      // function(){
+
+      // }
+
+      //named function Expression
+      function name() {}
+
+      //Difference between params and arguments?
+      function paramArg(param1, param2) {
+        return param1 - param2;
+      }
+      //arguments
+      console.log(paramArg(5, 2));
+
+      // first class functions ||firs class citizens in js
+      var b = function (param1) {
+        return function xyz() {};
+      };
+      console.log(b());
+    </script>
+  </body>
+</html>
