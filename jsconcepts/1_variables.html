@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>let ,var , const</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        // ES5
-        // variables declared with  "var" are function scoped.
-        // console.log(title)
-        var title = "ES5"   
+      // javasciprt is a synchronous single-threaded language
+      //  everything in javascript happens inside an Execution context
+      // memory : variable enviroment || code (thread -f excution)
+      // ES5
+      // variables declared with  "var" are function scoped.
+      // console.log(title)
+      var title = "ES5";
 
+      var firstName = "Adnan";
+      // var  is function scope only
+      // function getName() {
+      //     var firstName = "peter"
+      //     console.log("inner function " + firstName);
+      // }
+      // getName()
+      // console.log("outter function " + firstName);
 
-        var firstName = "Adnan"
-            // var  is function scope only
-        // function getName() {
-        //     var firstName = "peter"
-        //     console.log("inner function " + firstName);
-        // }
-        // getName()
-        // console.log("outter function " + firstName);
+      if (true) {
+        let firstName = "peter";
+        // console.log("inner function " + firstName);
+      }
+      // console.log("outter function " + firstName);
+      //undefined because of hoisting  var  automaticaliy move to the top of script
 
-        if(true) {
-            let firstName = "peter"
-            // console.log("inner function " + firstName);
-        }
-        // console.log("outter function " + firstName);
-        //undefined because of hoisting  var  automaticaliy move to the top of script
+      // "let" and "const" are block scoped
+      // console.log(city);
+      let city = "mumbai"; //show an error  because you must initialized  variables  before declared
 
-        // "let" and "const" are block scoped 
-        // console.log(city);
-        let  city  = "mumbai"  //show an error  because you must initialized  variables  before declared
+      var i = 100;
 
-        var i = 100;
-
-        for (let i = 0; i <=10; i++) {
-            // console.log( "INNER " + i)
-            
-        }
+      for (let i = 0; i <= 10; i++) {
         // console.log( "INNER " + i)
-        
-        const MAX_VALUE = 100;
-        // MAX_VALUE = 200 //error;
-        // console.log(MAX_VALUE)
+      }
+      // console.log( "INNER " + i)
 
-        let greet = "Hello";
-        {
-            let greet = "good morning";
-            console.log("Greet INSIDE console", greet);
-        }
-        console.log("Greet OUTSIDE console", greet);
+      const MAX_VALUE = 100;
+      // MAX_VALUE = 200 //error;
+      // console.log(MAX_VALUE)
+
+      let greet = "Hello";
+      {
+        let greet = "good morning";
+        console.log("Greet INSIDE console", greet);
+      }
+      console.log("Greet OUTSIDE console", greet);
+
+      // -> let and const are hoisted. we cant use them before initialization is result of "temporal dead zone".
+      // -> js use diff memory than global execution context to store let and cost. which is reason behind "temporal dead zone"
+      // -> level of strictness ... var<<let<<const.
+      // -> var //no temporal dead zone, can redeclare and re-initialize, stored in GES
+      //     let //use TDZ, can't re-declare, can re-initialize, stored in separate memory
+      //     const //use TDZ, can't re-declare, can't re-initialize, stored in separate memory
+      // -> syntax error is similar to compile error. while type and reference error falls under run time error.
+      // -> syntax error ... violation of JS syntax
+      //     type error ...  while trying to re-initialize const variable
+      //     reference error ... while trying to access variable which is not there in global memory.
     </script>
-</body>
+  </body>
 </html>
