@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //         1. JS runtime environment contains all elements required to run JS.
+      //   2. It contains JS engine, set of API's, callback queue, microtask queue, event loop.
+      //   3. JS engine is a piece of code.
+      //   4. Process includes Parsing ---> Compilation -----> Execution.
+      //   5. Parsing breaks code into tokens and converts it into AST(Abstract Syntax Tree).
+      //   6. Modern JS engine follows JIT compilation, it interprets while it optimises code as much as it can.
+      //   7. Execution and Compilation are done together.
+      //   8. Execution has Garbage collector and other optimisation such as inlining, copy elusion, inline caching etc.
+      //   9. Fell in love with JS.
+      //10 mark & sweap alogritham
+      // inlining
+      //copy elision
+      //inline caching
+
+      console.log("start");
+      setTimeout(function cb() {
+        console.log("callback");
+      }, 5000);
+      console.log("End");
+      //million
+      let startDate = new Date().getTime();
+      let endDate = startDate;
+
+      while (endDate < startDate + 10000) {
+        endDate = new Date().getTime();
+      }
+      console.log("while expires");
+
+      //1. The setTimeout function stores it in the callback queue which is executed only after call stack is empty, even if setTimeout is set to 0ms.
+      // 2. setTimeout ensures that minimum it will take the time mentioned because it may be paused due to call stack not empty.
+    </script>
+  </body>
+</html>
