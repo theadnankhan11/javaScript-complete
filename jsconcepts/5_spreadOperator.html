@@ -1,101 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>...</title>
-
-</head>
-<body>
-    //The syntex is three dots(...)follow by the array(or iterable*)
-    //It expands the array into individual elements. So it can be used to expand the array in a places where zero or more elements are expected
-
+  </head>
+  <body>
+    //The syntex is three dots(...)follow by the array(or iterable*) //It
+    expands the array into individual elements. So it can be used to expand the
+    array in a places where zero or more elements are expected
 
     <script>
+      // what is spread operator
+      const users = ["user1", "user2"];
+      console.log(users);
+      console.log(...users);
 
-        // what is spread operator
-        const users = ["user1", "user2"];
-        console.log(users);
-        console.log(...users);
+      //spread operator with arrays
+      //ES5  use concat  for two element
+      console.log("...spread with Array...");
+      const team1 = ["user1", "user2"];
+      const team2 = ["user3"];
+      const newTeam = team1.concat(team2);
+      console.log(newTeam);
 
-        //spread operator with arrays
-        //ES5  use concat  for two element
-        console.log("...spread with Array...");
-        const team1 =  ["user1", "user2"];
-        const team2 =  ["user3"];
-        const newTeam = team1.concat(team2);
-        console.log(newTeam);
+      const myTeam = [...team1, ...team2];
+      console.log(myTeam);
 
-        const myTeam = [...team1,...team2]
-        console.log(myTeam);
+      const newTeamMember = "newTeamMember";
+      //good
+      console.log(team1.concat(newTeamMember));
+      // bad
+      console.log([...team1, ...newTeamMember]);
+      //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        const  newTeamMember = "newTeamMember";
-        //good
-        console.log(team1.concat(newTeamMember));
-        // bad
-        console.log([...team1,...newTeamMember]);
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      console.log("copying array");
+      const productList1 = ["phone", "adapter"];
+      // const newProduct = productList1;
+      const newProduct = [...productList1];
 
-        console.log("copying array");
-        const productList1 = ['phone', 'adapter'];
-        // const newProduct = productList1;
-        const newProduct = [...productList1];
+      console.log(productList1);
+      console.log(newProduct);
 
-        console.log(productList1);
-        console.log(newProduct);
-        
-        newProduct.push('camera');
+      newProduct.push("camera");
 
-        console.log(productList1);
-        console.log(newProduct);
+      console.log(productList1);
+      console.log(newProduct);
 
+      //spread operator with objects
+      console.log("spread operator with objects");
 
-        //spread operator with objects
-        console.log('spread operator with objects');
+      const emp = {
+        name: "adnan",
+        job: "developer",
+      };
+      const personalDetail = {
+        age: 20,
+      };
+      const clonedEmployee = { ...emp };
+      console.log(emp);
+      console.log(clonedEmployee);
 
-        const emp = {
-            name: "adnan",
-            job: "developer"
-        }
-        const personalDetail = {
-            age: 20
-        }
-        const clonedEmployee = {...emp}
-        console.log(emp);
-        console.log(clonedEmployee);
+      const clonedDetails = { ...emp, ...personalDetail };
+      console.log(clonedDetails);
 
+      //spread operator in function calls
+      console.log(Math.min(10, 3, 4, 55, 6));
 
-        const clonedDetails = {...emp,...personalDetail}
-        console.log(clonedDetails);
+      const scoreList = [100, 200, 300, 400, 800];
+      console.log(Math.min(...scoreList));
+      console.log(Math.max(...scoreList));
 
-        //spread operator in function calls
-        console.log(Math.min(10,3,4,55,6,));
+      // Es5
+      console.log(Math.min.apply(null, scoreList));
 
-        const scoreList = [100,200,300,400,800]
-        console.log(Math.min(...scoreList));
-        console.log(Math.max(...scoreList));
-        
-        // Es5
-        console.log(Math.min.apply(null, scoreList));
+      //immutability with spread operator
 
-        
+      const todos = [
+        { task: "reading", completed: true },
+        { task: "painting", completed: false },
+      ];
 
-        //immutability with spread operator
+      function addToDo(NewToDo) {
+        return [...todos, { ...NewToDo }];
+      }
 
-        const todos = [
-            {task: 'reading', completed: true},
-            {task: 'painting', completed: false}
-        ]
-
-        function addToDo(NewToDo) {
-            return[...todos,{...NewToDo}];
-        }
-
-        const newList = addToDo({
-            task:"recording", completed:false
-        })
-        console.log(todos)
-        console.log(newList)
+      const newList = addToDo({
+        task: "recording",
+        completed: false,
+      });
+      console.log(todos);
+      console.log(newList);
     </script>
-</body>
+  </body>
 </html>

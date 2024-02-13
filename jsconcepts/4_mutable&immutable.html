@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>mutable&immutable</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        //javaScript basicaly store two data types primitve and non-primitive(reference type)
-        //primitive(immutable) null,number,boolean,string,symbol,undefined
-        //non-primitive(mutable) line Array,object 
-        
-        //primitive
-        // once created its never change its value
-        let x = 20
-        let y = x
-        y += 1;
-        console.log(y);
-        console.log(x);
-        //non-primitive(reference)
-        // its basicly change the value on the memory 
-        // example:-1
-        let a = ["value1","value2"]
-        let b = a
-        b.pop() 
-        console.log(b);
-        console.log(a);
-        // example:-2
-        let c = {
-            name : "adnan",
-            city: "mumbai"
-        }
-        
-        let d = c
-        d.age = 55
-        console.log(d);
-        console.log(c);
-        
-        
+      //javaScript basicaly store two data types primitve and non-primitive(reference type)
+      //primitive(immutable) null,number,boolean,string,symbol,undefined
+      //non-primitive(mutable) line Array,object
+
+      //primitive
+      // once created its never change its value
+      let x = 20;
+      let y = x;
+      y += 1;
+      console.log(y);
+      console.log(x);
+      //non-primitive(reference)
+      // its basicly change the value on the memory
+      // example:-1
+      let a = ["value1", "value2"];
+      let b = a;
+      b.pop();
+      console.log(b);
+      console.log(a);
+      // example:-2
+      let c = {
+        name: "adnan",
+        city: "mumbai",
+      };
+
+      let d = c;
+      d.age = 55;
+      console.log(d);
+      console.log(c);
     </script>
-</body>
+  </body>
 </html>

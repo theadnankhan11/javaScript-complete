@@ -12,31 +12,30 @@
         // console.log(Array.isArray(values));
         let sum = 0;
 
-        values.map(d => sum += d);
+        values.map((d) => (sum += d));
         console.log(sum);
       }
-    //   sum(3, 5);
-    //   sum(3, 5, 23, 333, 222);
-    //   sum(3, 5, 100, 200);
+      //   sum(3, 5);
+      //   sum(3, 5, 23, 333, 222);
+      //   sum(3, 5, 100, 200);
 
-    
-    function claculate(type,...values){
-       type(...values)
-    }
+      function claculate(type, ...values) {
+        type(...values);
+      }
 
-    claculate(sum, 10,20,30,40)
-    
-    //error
-    // function sum2() {
-    //     console.log(Array.isArray(arguments));
-    //     // let sum2 = 0;
-    //     // arguments.map(d => sum2 += d);
-    
-    //     // console.log(sum2);
-        
-    // }
-    
-    // sum2(2,3)
+      claculate(sum, 10, 20, 30, 40);
+
+      //error
+      // function sum2() {
+      //     console.log(Array.isArray(arguments));
+      //     // let sum2 = 0;
+      //     // arguments.map(d => sum2 += d);
+
+      //     // console.log(sum2);
+
+      // }
+
+      // sum2(2,3)
     </script>
   </body>
 </html>

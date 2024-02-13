@@ -41,7 +41,7 @@
       //         console.log(getUser());
 
       //this
-        //ES5
+      //ES5
       // function addToCart() {
       //   this.productNmae = "laptop";
 
@@ -58,7 +58,7 @@
       // obj.getProduct();
 
       // ES6
-      
+
       // function addToCart() {
       //   this.productNmae = "laptop";
       //   this.getProduct = function () {
@@ -70,7 +70,6 @@
       // let obj = new addToCart();
       // obj.getProduct();
 
-
       //arrow function is that argument binding in not there but regular function have argument property
 
       // function first(){
@@ -78,39 +77,35 @@
       // }
       // first(19,20)
 
-        // arguments propperty will not work with  arrow function 
+      // arguments propperty will not work with  arrow function
       // const abc  = () =>{
       //   console.log(arguments);
       // }
       // abc(19,20)
 
-
-
-      const names = ["sam","Daniel","peter"]
-      const result = names.map(name => name.toUpperCase())
+      const names = ["sam", "Daniel", "peter"];
+      const result = names.map((name) => name.toUpperCase());
       console.log(result);
 
       // use regular function
-      const  User = {
-        name:"adnan",
-        getUser : function(){
+      const User = {
+        name: "adnan",
+        getUser: function () {
           console.log(this);
-          return `Username is ${this.name}`
-        }
-      }
+          return `Username is ${this.name}`;
+        },
+      };
       console.log(User.getUser());
 
-
-      // give error 
-      const  User1 = {
-        name:"adnan",
-        getUser : ()=>{
+      // give error
+      const User1 = {
+        name: "adnan",
+        getUser: () => {
           console.log(this);
-          return `Username is ${this.name}`
-        }
-      }
+          return `Username is ${this.name}`;
+        },
+      };
       console.log(User1.getUser());
-      </script>
+    </script>
   </body>
-
 </html>
