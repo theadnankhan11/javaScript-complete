@@ -1,5 +1,5 @@
 //  Primitive :- not give referance of memory location data
-//(call by value {make changes in copy data only  not in origial memory})
+//(call by value {make changes in copy data only  not in origial memory} stack memory)
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
 const score = 100; //number
@@ -17,17 +17,15 @@ const anotherId = Symbol("123"); //this is another symbol  give uniqe id
 
 // const bigNumber = 3456543576654356754n // for long numbers or crptocurrancy and scitific calculation
 
-
-
+// *************************************************************
 // Reference (Non primitive) direct memory (changes) alocation (not copy)
-
 // Array, Objects, Functions
 
 const heros = ["shaktiman", "naagraj", "doga"]; // object
 let myObj = {
   // object
   name: "hitesh",
-  age: 22
+  age: 22,
 };
 
 const myFunction = function () {
@@ -35,10 +33,9 @@ const myFunction = function () {
   console.log("Hello world");
 };
 
-
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
-// ++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++memory alocations+++++++++++++++++++++++
 // stack  (primitive )  ,Heap (Not-primitive)
 
 let myName = "Adnankhan@gmail.com";
