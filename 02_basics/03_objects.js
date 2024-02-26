@@ -1,13 +1,12 @@
 // singleton
-// Object.create    from construtor
+// Object create = form construtor is singleton
 
-// object literals
+// this is object literals
 
 const mySym = Symbol("key1")
-
 const JsUser = {
     name: "Hitesh",
-    "full name": "Hitesh Choudhary",      //<---note  
+    "full name": "Adnan khan", //<---note  
     [mySym]: "mykey1",
     age: 18,
     location: "Jaipur",

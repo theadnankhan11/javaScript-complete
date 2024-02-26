@@ -39,24 +39,8 @@ function loginUserMessage(username = "sam"){
 
 
 
-// ++++++++++++++++++++++++function +++++++++++++++++++++++++++++
-function counter() {
-    // Infinite loop
-    for (let count = 1; ; count++) {
-        console.log(`${count}A`);
-        // Until 5
-        if (count === 5) {
-            return;
-        }
-        console.log(`${count}B`);
-        // Until 4
-    }
-    console.log(`${count}C`); // Never appears
-}
-// counter(); // Logs: 1A, 1B, 2A, 2B, 3A, 3B, 4A, 4B, 5A
 
-
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++RestOperator++++++++++++++++++++++++++++++++++
 //  ... <-restOperator
 function calculateCartPrice(val1, val2, ...num1){
     return num1
@@ -87,3 +71,22 @@ function returnSecondValue(getArray){
 
 // console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000]));
+
+
+
+// ++++++++++++++++++++++++function +++++++++++++++++++++++++++++
+function counter() {
+    // Infinite loop
+    for (let count = 1; ; count++) {
+        console.log(`${count}A`);
+        // Until 5
+        if (count === 5) {
+            return;
+        }
+        console.log(`${count}B`);
+        // Until 4
+    }
+    console.log(`${count}C`); // Never appears
+}
+// counter(); // Logs: 1A, 1B, 2A, 2B, 3A, 3B, 4A, 4B, 5A
+

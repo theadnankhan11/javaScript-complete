@@ -1,3 +1,4 @@
+// for in  use for Object
 const myObject = {
     js: 'javascript',
     cpp: 'C++',
@@ -23,4 +24,4 @@ for (const key in programming) {
 
 // for (const key in map) {
 //     console.log(key);
-// }
+// }   //map is not iterable for now

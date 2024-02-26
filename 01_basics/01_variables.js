@@ -9,7 +9,7 @@ accountPassword = "21212121";
 accountCity = "Bengaluru";
 
 // console.log(accountId);
-// console.log(accountCity);
+// conso le.log(accountCity);
 
 /*
 Prefer not to use var

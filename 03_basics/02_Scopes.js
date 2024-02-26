@@ -24,3 +24,29 @@ function one(){
 }
 one()
 
+if(true){
+    const username = "adnan";
+    if (username === "adnan") {
+        const website =  " youtube"
+        console.log(username + website);
+    }
+    // console.log(website);
+}
+// console.log(username);
+
+console.log(one(4))
+function one(num){
+    return num +1;
+}
+
+// console.log(addTwo(4)) // error cant access before initallization hoisting
+const addTwo = function two(num){
+    return num + 2;
+}
+
+
+const arrfun = (num) => {
+    return num *= 5
+} 
+
+console.log(arrfun(3))

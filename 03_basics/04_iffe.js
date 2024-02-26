@@ -5,13 +5,14 @@
 (function chai(){
     // named IIFE
     console.log(`DB CONNECTED`);
-})();
+})();  //use  () start % end of the function
+       // To avoid error put samicolan 
 
-// To avoid error put samicolan 
+( (name) =>{
+    // unnamed IIFE 
+    console.log((`connected To ${name}`));
+})  //("adnan");
 
-// ( (name) =>{
-//     console.log((`connected To ${name}`));
-// }) ("adnan");
 
 // 2)
 ( (name) => {

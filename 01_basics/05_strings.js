@@ -1,7 +1,7 @@
 const name = "adnan"
 const repoCount = 70
 
-// console.log(name + repoCount + " Value");
+ // console.log(name + repoCount + " Value");
 
 // console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
@@ -33,4 +33,4 @@ console.log(url.replace('%20', '-'))
 
 console.log(url.includes('sundar'))    //if present  true value  or not give false
 
-console.log(gameName.split(' '));
+console.log(gameName.split('-'));

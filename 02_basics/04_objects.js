@@ -1,3 +1,4 @@
+// this is singleton object 
 // const tinderUser = new Object()
 const tinderUser = {}
 
@@ -44,7 +45,7 @@ const users = [
         id: 1,
         email: "h@gmail.com"
     },
-]
+] 
 
 users[1].email
 // console.log(users[1].email)

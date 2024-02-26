@@ -25,7 +25,7 @@ else{
     // console.log(" defult value run")
 }
 
-// Nullish Coalescing Operator (??): null undefined
+// Nullish Coalescing Operator (??) for  null undefined
 
 let val1;
 // val1 = 5 ?? 10

@@ -1,6 +1,6 @@
 let score = "adnan"
 let newscore = "45";
-
+ 
 // console.log(typeof score);
 // console.log(typeof(newsscore));
 
